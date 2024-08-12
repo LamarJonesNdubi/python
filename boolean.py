@@ -1,14 +1,26 @@
-#you can create name arts in python too, use this "pip install art" in the terminal then forlow the rest:
-import pyfiglet
+####################################################################################################################################################
+#                                                             [LAMAR]
+####################################################################################################################################################
+import subprocess
+import sys
 
-# Create the text you want to display
-text = "Lamar"
+# Function to install a package if it's not already installed
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
-# Generate the ASCII art
-ascii_art = pyfiglet.figlet_format(text)
+# Try importing the package; if it fails, install it
+try:
+    import pyfiglet
+except ImportError:
+    print("pyfiglet not found. Installing...")
+    install("pyfiglet")
+    import pyfiglet
 
-# Print the ASCII art
+# Now you can use pyfiglet as usual
+ascii_art = pyfiglet.figlet_format("Lamar")
 print(ascii_art)
+###################################################################################################################################################
+#self practice...
 
 
 
