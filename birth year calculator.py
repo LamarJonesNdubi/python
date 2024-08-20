@@ -1,4 +1,5 @@
-#                                                  [LAMAR]
+####################################################################################################################################################
+#                                                             [LAMAR]
 ####################################################################################################################################################
 import subprocess
 import sys
@@ -20,26 +21,16 @@ ascii_art = pyfiglet.figlet_format("Lamar")
 print(ascii_art)
 ###################################################################################################################################################
 #self practice...
+# today i will be programming a age calculator that uses the user's birth year and current year input.
 
-# TODAY I WILL BE LEARNING STRINGS  METHODS IN PYTHON
+name = str(input("Enter your name: "))
+current_year = int(input("Enter the current year e.g 2024: "))
+birth_year = int(input("Enter your year of birth: "))
 
-# strings are long texts of words
-
-#Test
-# Validate user input exercise
-#1. username is no more than 12 characters
-#2. username must not contain spaces
-#3. username must not contain digits
-
-username = input("Enter your username: ")
-
-
-
-
-if len(username) > 12:
-    print("Your username can not be more than 12 characters.")
-elif not username.find(" ") == -1:
-    print("Your username can not contain spaces")        
+if current_year > birth_year:
+    result = current_year - birth_year
+    print(f"Dear {name} you are {result} years old.") 
 else:
-    print(f"welcome {username}")
+    print(f"Are you Time travelling {name}?")
 
+   
