@@ -22,14 +22,17 @@ print(ascii_art)
 ###################################################################################################################################################
 #self practice...
 
-# TODAY I WILL BE LEARNING STRINGS  METHODS IN PYTHON
+#today i will be learning about format specifiers.
 
-# strings are long texts of words
+#formart specifiers = {:flags} format a value based on what flag are inserted.
 
-name = input("Enter your full name: ")
-result = name.rfind("L")
-#result = name.upper()
-#result = name.lower()
-#result = name.find("l")
-
-print(result)
+# .(number)f = round to that many decimal places (fixed point)
+# :(number)  = allocate that many spaces
+# :03        = allocate and zero pad that many spaces
+# :<         = left justified
+# :>         = right justified
+# :^         = centre justified
+# :+         = use a plus sigh to indicate positive value 
+# :=         = place sign to indicate positive value 
+# :          = insert a space before positive value
+# :,         = comma separator

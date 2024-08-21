@@ -22,14 +22,9 @@ print(ascii_art)
 ###################################################################################################################################################
 #self practice...
 
-# TODAY I WILL BE LEARNING STRINGS  METHODS IN PYTHON
+username = input("Enter your user name")
 
-# strings are long texts of words
-
-name = input("Enter your full name: ")
-result = name.rfind("L")
-#result = name.upper()
-#result = name.lower()
-#result = name.find("l")
-
-print(result)
+if len(username) > 5:
+    print("Your username can not be longer than 5 characters")
+else:
+    print(f"Wecome {username}")              
